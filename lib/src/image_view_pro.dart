@@ -4,20 +4,20 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class ImageViewPro extends StatelessWidget {
-  String? url;
-  String? imagePath;
-  String? svgPath;
-  String? svgString;
-  File? file;
-  double? height;
-  double? width;
-  Color? color;
+  final String? url;
+  final String? imagePath;
+  final String? svgPath;
+  final String? svgString;
+  final File? file;
+  final double? height;
+  final double? width;
+  final Color? color;
   final BoxFit fit;
   final String placeHolder;
 
   ///a [CommonNetworkImageView] it can be used for showing any network images
   /// it will shows the placeholder image if image is not found on network
-  ImageViewPro({
+  const ImageViewPro({super.key,
     this.url,
     this.imagePath,
     this.svgPath,
